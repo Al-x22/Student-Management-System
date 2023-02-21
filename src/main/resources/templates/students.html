@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Student Management System</title>
@@ -23,8 +23,10 @@
             </tr>
             </thead>
             <tbody>
+            <!--/*@thymesVar id="students" type="aj"*/-->
             <tr th:each = "student: ${students}">
                 <td th:text = "${student.firstName}"></td>
+                <!--/*@thymesVar id="lastName" type="thymeleaf"*/-->
                 <td th:text = "${student.lastName}"></td>
                 <td th:text = "${student.email}"></td>
             </tr>
@@ -33,3 +35,4 @@
     </div>
 </body>
 </html>
+
