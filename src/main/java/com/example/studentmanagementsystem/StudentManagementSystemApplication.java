@@ -19,12 +19,6 @@ public class StudentManagementSystemApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Student student1 = new Student("Alejandro","Ballesteros","alex@balle.com");
-        studentRepository.save(student1);
 
-        Student student2 = new Student("Diego","eugenio","Diego@eugenio.com");
-        studentRepository.save(student2);
-        Student student3 = new Student("Jay","Crossbow","jay@crossbow.com");
-        studentRepository.save(student3);
     }
 }
