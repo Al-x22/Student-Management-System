@@ -10,7 +10,7 @@
 <body>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand" href="#">Student Management System</a>
+    <a class="navbar-brand" th:href="@{/students}">Student Management System</a>
 
     <!-- Toggler/collapsible Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -20,9 +20,6 @@
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{/students}">Student Management</a>
-            </li>
         </ul>
     </div>
 </nav>
